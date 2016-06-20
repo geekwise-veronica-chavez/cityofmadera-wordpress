@@ -1,0 +1,852 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+html, body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-size:12px;
+    background-color:#fff;
+}
+header{
+  height: 60px;
+}
+.header-img{
+    margin:0;
+    padding:0;
+    background-image: url("http://i.imgur.com/5oRD9PS.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+   
+}
+#banner{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 20px 0px 0px;
+    background-color: #dfdbdb;
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    width:100%;
+    height: 60px;
+    z-index: 10;
+}
+.rectangle {
+	width: 225px;
+	height: 30px;
+	background:#b585ce;
+    float: left;
+    padding: 30px 0px 0px 55px;
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-bottom: 60px solid #dfdbdb;
+	border-left: 90px solid transparent;
+  float: left;
+  position: absolute;
+  left: 190px;
+}
+.madera_logo{
+    display: block;
+    text-transform: capitalize;
+    font-size:1.9rem;
+    color: #fff;
+  
+} 
+
+/*weather update*/
+.weather{
+    margin-top: 30px;
+    position: relative;
+    right: 45px;
+    font-size: 25px !important; 
+}
+
+/*search bar slide out*/
+
+#wrap {
+ 
+  display: inline-block;
+  float: right;
+  padding: 0;
+  width: 30%;
+}
+form{
+    margin-top: 15px;
+}
+.search_bar{
+   
+    float: left;
+}
+input[type="search"]{
+
+  width:40px;
+  height: 30px;
+  margin-top: 12px;
+    background: none;
+    border: none;
+    background-image: url("http://i.imgur.com/T3uvKEO.png");
+    background-size: 40px 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+  
+}
+
+input[type="search"]:focus{
+  -moz-transition:all 2s ease;
+  -webkit-transition:all 2s ease;
+  width:250px;
+  float:right;
+  border:none;
+  outline:none;
+  border-bottom: grey 2px solid;
+}
+
+/*sticky menu bar*/
+.menu{
+    font-size:25px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    text-shadow: 1px grey;
+}
+.navigation_one{
+  background-color: #fff;
+  width: 30%;
+  position: fixed;
+  display: none;
+  height: 380px;
+  margin:0;
+  padding:0;
+  margin-right: 5px;
+}
+#sticky_menu{
+  display: none;
+}
+#sticky_menu:checked~.navigation_one{
+  display: block;
+}
+
+.ul_main_nav{
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+}
+/*li style for main header*/
+.main_nav{
+  width: 100%;
+  margin:0;
+  padding:0;
+  list-style: none;
+  text-align: center;
+  
+}
+/*dropdown menu on home page a href*/
+.main_page_li{
+  
+   color: #000;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding: 20px 30px;
+    width: 100%;
+    border-bottom:solid #b1a59d 1px;
+    text-transform: uppercase;
+}
+.main_page_li:hover{
+  background-color: #b998d0;
+  color: #fff;
+}
+#border_top_res{
+   border-top:solid #b1a59d 1px;
+}
+
+/*div for the large X*/
+#x{
+  background-color: #fff;
+  width: 100%;
+  height: 20px;
+  padding-bottom: 35px;
+  padding-top: 40px;
+  position: relative;
+  top:-50px;
+ 
+}
+.equis_nav{
+  font-size: 50px !important;
+  float: right;
+}
+/*content middle of image*/
+.mid_content{
+  width: 80%;
+  margin: auto;
+  padding:0;
+  position: relative;
+  top:-300px;
+  text-align: center;
+
+
+  
+}
+.welcome{
+  font-size: 28px;
+  text-transform: capitalize;
+  background-color: #fff;
+  height: 25px;
+  opacity: .5;
+  width: 30%;
+  margin: auto;
+  padding:10px 0 10px 0;
+}
+.mid_text{
+  font-size: 62px;
+  text-transform: uppercase;
+  color: #b998d0;
+  padding:0;
+  margin:0;
+  letter-spacing: 2.5px;
+} 
+/*body content for home page*/
+
+.home_main{
+  width: 100%;
+  height: auto;
+  margin-top:-130px;
+  padding:0;
+}
+/*slider for home page*/
+
+@keyframes slideshow {
+0% { left: 0%; }
+
+
+
+50% { left: -75%; }
+
+
+
+100% { left: -150%; }
+}
+
+section#slider { overflow: hidden; }
+section#slider figure .box_slider { width:250px; height:250px; float: left; padding:10px; border-bottom: solid 1px grey; }
+section#slider figure { 
+  position: relative;
+  width: 200%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 40s slideshow linear repeat; 
+  height: 200px;
+  
+}
+
+
+.purple{
+  background-color:#dfdbdb;
+}
+
+.border-bottom{
+   border-bottom:solid 1.5px grey;
+    padding-bottom: 10px;
+    padding-top:10px;
+    margin:0;
+  padding:0;
+  font-size: 18px;
+  color:#8e6a8e;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bold;
+    
+}
+#alert{
+  text-transform: uppercase;
+  width: 20px;
+  padding:5px;
+  margin:auto;
+  
+
+}
+.box_home_info{
+  width:90%;
+  color:grey;
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height:1.5;
+  font-family: sans-serif;
+  
+}
+/*read more link*/
+.box_links{
+  margin:0;
+  padding:0;
+  font-size: 12px;
+  color:#8e6a8e;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bold;
+  
+}
+.read_more{
+  
+}
+/*madera facts section/ slider 2*/
+
+.madera_fact_section{
+  width: 100%;
+  margin:0;
+  padding:0;
+  
+  
+}
+.line_home{
+  background-color:#b585ce;
+  height: 20px;
+  margin:0;
+  padding:0;
+  
+}
+.line_across{
+  /*background-color: #dcdfdf;*/
+  /*color:#b585ce;*/
+  background-color: #beb6c2;
+  color:#fff;
+  font-size: 48px;
+  font-weight:bold;
+  font-family: monospace;
+  width: 100%;
+  height:50px;
+  margin:0;
+  padding:0;
+  text-align:center;
+  padding-bottom: 10px;
+  padding-top:10px;
+  
+}
+.facts{
+  width:25%;
+  height:200px;
+  float:left;
+  text-align: center;
+  margin:0;
+  padding:0;
+  background-color:  #b585ce;
+
+  
+}
+.grey{
+   
+   background-color: #dcdfdf;
+
+}
+
+/*2nd set of boxes on home page*/
+.content_facts{
+  font-size: 22px;
+  font-family: monospace;
+  margin:0;
+  padding:0;
+  color:#000;
+  padding-top:35px;
+  text-align: left;
+    padding-left: 10px;
+}
+/*first hr might need a class or id if used again*/
+hr{
+  width:50%;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 1px;
+    background-color: grey;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    
+}
+
+.facts_link{
+  text-decoration: none;
+  color:grey;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/*text content for madera facts (2nd set of boxes)*/
+.text_content_fact{
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: sans-serif;
+  color:grey;
+  
+}
+/*event calendar section css*/
+.event_sec{
+  width: 100%;
+  margin:0;
+  float: left;
+  padding-bottom: 45px;
+ 
+}
+.event_div{
+  width: 100%;
+  color:#b585ce;
+  font-size: 42px;
+  text-transform: uppercase;
+  text-align:center;
+  padding-top:45px;
+  padding-bottom:45px;
+  font-weight: bold;
+  
+  
+}
+.ul_event{
+  width: 60%;
+  margin:auto;
+  background-color:#dcdfdf;
+  padding:10px;
+  background-image: url("http://i.imgur.com/Z0lSh1k.jpg");
+  background-size: 100%;
+  background-image: linear-gradient(0deg, #dcdfdf, #dcdfdf 40%, #dcdfdf);
+}
+.li_event_calendar{
+  width: 100%;
+  margin:0;
+  padding:0;
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+  height: 65px;
+  
+
+ 
+}
+.date_event{
+  width: 5%;
+  height: 45px;
+  padding:10px;
+  background-color:#b585ce;
+  color:#fff;
+  text-align: center;
+  font-size: 18px;
+  margin:0;
+  float: left;
+
+}
+
+.event{
+  width: 90%;
+  float: left;
+  color: #000;
+   text-decoration: none;
+  line-height: 3;
+  font-size:18px;
+  padding-left: 5px;
+  text-transform: capitalize;
+}
+/*font awesome angle right*/
+#angle-right{
+  float: right;
+  font-size:20px;
+}
+
+/*footer section css footer nav*/ 
+
+.main_footer{
+  width: 100%;
+  padding:0;
+  margin:0;
+  background-color: #dcdfdf;
+  float: left;
+  
+}
+.home_footer_nav{
+  width:33%;
+  padding:0;
+  margin:0;
+  float: left;
+}
+.home_footer_ul{
+  width:100%;
+  padding:0;
+  margin:0;
+}
+.home_footer_li{
+  width: 50%;
+  margin:auto;
+  padding:0;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: monospace;
+  
+}
+/*footer nav site section*/
+.site_map{
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-top: 0;
+}
+.footer_link{
+  color:#000;
+  text-decoration: none;
+}
+.footer_title_contact{
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top:0;
+}
+
+.madera_footer_info{
+  width: 33%;
+  float: left;
+  font-family: monospace;
+  text-transform: capitalize;
+  font-size:14px;
+ 
+  
+  
+}
+.footer_madera_logo{
+  width: 50%;
+  float: left;
+}
+#logo{
+  width: 65%;
+  float: right;
+}
+.madera_contact{
+   float: left;
+   width: 45%;
+   margin-top: 25px;
+   padding-top: 20px;
+   font-weight: bold;
+  
+}
+.madera_tele{
+  color: #000;
+  text-decoration: none;
+}
+.social_media_footer{
+  width: 33%;
+  float:left;
+}
+.social_media_ul{
+  width: 100%;
+}
+.li_social_media{
+  width: 90%;
+  margin:auto;
+  float: left;
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 25px;
+}
+.fb_img{
+  width: 50%;
+}
+
+/*residents page */
+.residents_main{
+  width: 100%;
+  margin:0;
+  padding:0;
+  /*background image */
+  background-image:url("http://i.imgur.com/TE0kXq7.jpg");
+  /*background-position: 0 0px, 100% 100%;*/
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+    min-height: 100vh;
+}
+.section_scroll{
+  width: 100%;
+  position: relative;
+  top:130px;
+  
+}
+.resident_side_menu{
+  width: 45%;
+  text-align: left;
+  float: left;
+  margin-top: 25px;
+}
+.resident_title{
+  font-size: 32px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-align: center;
+
+}
+.resident_line{
+  width: 30%;
+  margin:auto;
+  border-bottom: solid 2px grey;
+  padding-top: 25px;
+}
+.resident_list_ul{
+  width: 100%;
+  
+}
+.resident_li{
+  list-style: none;
+  width: 35%;
+  margin:auto;
+  font-size: 18px;
+  line-height: 2;
+ font-weight: bold;
+  font-family: monospace;
+  
+}
+.resident_scroll_list{
+  width: 100%;
+  text-decoration: none;
+   color: #000;
+  text-transform: capitalize;
+}
+.resident_scroll_list:hover{
+  color:#fff;
+}
+/*scroll box css*/
+.scroll_box_right{
+  width: 45%;
+  height: 300px;
+   overflow-y: scroll;
+   padding-bottom: 25px;
+   padding-top: 25px;
+  
+}
+.scroll_res_box{
+  width: 500px;
+  height: 300px;
+  background-color: #8d629b;
+  margin:auto;
+  margin-bottom: 25px;
+  padding-left: 15px;
+    position: relative;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+
+    
+}
+.text_half_box{
+  padding-top:100px;
+  
+}
+.box_info{
+  padding-top: 10px;
+  font-size: 14px;
+  font-family: monospace;
+}
+/*a href tag for the li facts box*/
+.resident_facts{
+  font-size: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: monospace;
+  
+ 
+}
+.box_line{
+  width: 45%;
+  border-bottom: 1px solid #fff;
+  
+}
+/*content page css eg city facts sub pages*/
+
+.city_main{
+  width:100%;
+  height: 600px;
+  background-color:#f3f3f3;
+  
+}
+.top_page_title{
+  width: 80%;
+  margin:auto;
+  padding:25px;
+  
+  
+}
+.title_city_facts{
+  width: 100%;
+  font-size:52px;
+  color:#bd8fd7;
+  margin:auto;
+  padding:0;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-weight: bold;
+}
+.line_sub_page{
+  border-bottom: 2px solid #bd8fd7;
+  width: 400px;
+  margin:0;
+  
+}
+.sub_nav{
+  width:100%;
+  font-size: 18px;
+  margin:auto;
+  padding:0;
+  padding-top: 10px;
+}
+.inline_sub_page{
+  text-decoration: none;
+ font-family: monospace;
+  text-transform: uppercase;
+  color:#000;
+}
+.city_facts_main_section{
+  width:75%;
+  margin:auto;
+  background-color:#fff;
+  padding:35px;
+  
+  
+}
+.content_info{
+  width: 100%;
+  margin:0;
+  padding:0;
+  font-size: 18px;
+    font-family: serif;
+    color: #8d8383;
+    line-height: 1.5;
+   
+  
+}
+.large_letter{
+  font-size: 36px;
+  color:purple;
+}
+/*content link boxes with outside or inside links */
+
+.content_link_boxes{
+  width: 60%;
+  margin:auto;
+  padding:0;
+  margin-top:20px;
+}
+.outside_links{
+  width: 40%;
+  float: left;
+  height: 75px;
+  padding:15px;
+    background-color: #fff;
+    margin-left: 10px;
+    line-height: 3;
+    text-align: center;
+  
+  
+}
+.outside_links:hover{
+  background-color: gray;
+}
+.grey_link{
+  color:#8d8383;
+  text-decoration: none;
+  font-size: 24px;
+}
+.grey_link:hover{
+  color:#fff;
+}
+/*council members main layout pages*/
+.council_main{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.council_member_title{
+  width: 100%;
+  height: 400px;
+}
+.member_madera{
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+#mayor_img{
+  width:100%;
+  height: 100%;
+}
+.position{
+  width:50%;
+  float: right;
+      font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    line-height: 2;
+  
+}
+.council_info{
+  width: 100%;
+  margin:auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.description{
+  width: 45%;
+  float:left;
+  font-size: 16px;
+}
+.other_info{
+  width: 50%;
+  float:right;
+  padding-left: 10px;
+}
+.mayor_li{
+  list-style: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  line-height: 1.5;
+ 
+}
+.title_mayor{
+  text-decoration: underline;
+}
